@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Què en penses?</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+  <h1>Què en penses sobre la IA?</h1>
+  <p class="intro">Ens agradaria conèixer la teva opinió. Omple el formulari següent:</p>
+
+  <form action="que_en_penses_enviat.html" method="get">
+
+    <h2>Dades de contacte</h2>
+
+    <label for="nom">Nom complet:</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="email">Correu electrònic:</label><br>
+    <input type="email" id="email" name="email" placeholder="@iticbcn.cat"  required><br><br>
+
+    <label for="data_naixement">Data de naixement:</label><br>
+    <input type="date" id="data_naixement" name="data_naixement" required><br><br>
+
+    <h2>Preguntes sobre la IA</h2>
+
+    <label for="valoracio">Fas servir la intel·ligència artifical freqüentment?</label><br>
+    <select id="valoracio" name="valoracio" required>
+      <option value="">Selecciona una opció</option>
+      <option value="excel·lent">Sí, cada dia</option>
+      <option value="bona">A vegades</option>
+      <option value="millorable">Només quan ho necessito urgent</option>
+      <option value="dolenta">Mai</option>
+    </select><br><br>
+
+    <fieldset class="centrat">
+      <legend>Quins aspectes t'han agradat més?</legend>
+      <div class="opcions-centrades">
+        <label><input type="checkbox" name="aspectes" value="disseny" checked> Presentació</label>      
+        <label><input type="checkbox" name="aspectes" value="disseny" checked> Originalitat</label>
+        <label><input type="checkbox" name="aspectes" value="disseny" checked> Disseny</label>
+        <label><input type="checkbox" name="aspectes" value="contingut"> Contingut</label>
+        <label><input type="checkbox" name="aspectes" value="facilitat"> Simplicitat</label>
+      </div>
+    </fieldset><br>
+
+    <fieldset class="centrat">
+      <legend>Recomanaries el nostre portal web?</legend>
+      <div class="opcions-centrades">
+        <label><input type="radio" name="recomanacio" value="si" checked> Sí</label>
+        <label><input type="radio" name="recomanacio" value="potser"> Potser</label>
+        <label><input type="radio" name="recomanacio" value="no"> No</label>
+      </div>
+    </fieldset><br>
+
+    <label for="valoracio">Com valores el nostre portal web?</label><br>
+    <select id="valoracio" name="valoracio" required>
+      <option value="">Selecciona una opció</option>
+      <option value="excel·lent">Excel·lent</option>
+      <option value="bona">Bona</option>
+      <option value="millorable">Millorable</option>
+      <option value="dolenta">Dolenta</option>
+    </select><br><br>
+
+    <label for="comentaris">Comentaris addicionals:</label><br>
+    <textarea id="comentaris" name="comentaris" rows="5" cols="40" placeholder="Escriu aquí la teva opinió..." required></textarea><br><br>
+
+    <div class="boto-centre">
+      <button type="submit">Enviar formulari</button>
+    </div>
+
+  </form>
+</body>
+</html>

@@ -1,7 +1,7 @@
-<!-- FILE: README.md -->
+<html>
 # Portal AI - Projecte web
 
-Projecte web sobre **Intel·ligència Artificial** creat per [Nom1] i [Nom2].
+Projecte web sobre **Intel·ligència Artificial** creat per [Èric] i [Miquel].
 
 ## Estructura de carpetes
 
@@ -24,7 +24,7 @@ Projecte web sobre **Intel·ligència Artificial** creat per [Nom1] i [Nom2].
 ```
 
 ## Entrega
-- Creeu un repositori privat a GitHub i pugeu tots els fitxers.
+- Creeu un repositori privat a GitHub i pugeu tots els fitxers. 
 - Afegiu els noms dels membres al `README.md` i concediu accés al professor.
 
 ---
@@ -476,3 +476,4 @@ th, td { padding:8px; border:1px solid #ddd; }
 node_modules/
 .DS_Store
 
+</
