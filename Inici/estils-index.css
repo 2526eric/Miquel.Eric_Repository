@@ -1,0 +1,126 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #0066cc;
+    font-weight: 700;
+}
+
+h2 {
+    color: #0066cc;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #0066cc;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a.actiu {
+    background-color: #004999;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.seccio-inici {
+    margin: 40px auto;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 40px 30px;
+}
+
+.seccio-inici img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.boto-inici {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.boto-inici:hover {
+    background-color: #004999;
+}
+
+footer {
+    background-color: #444;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .seccio-inici {
+        padding: 20px 5px;
+    }
+}

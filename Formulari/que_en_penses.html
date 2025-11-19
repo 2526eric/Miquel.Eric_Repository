@@ -7,7 +7,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="estils.css">
+  <link rel="stylesheet" href="estils-formulari.css">
+
+  <link rel="icon" type="image/png" href="../Imatges/logo_web.png"> 
 </head>
 <body>
   <h1>Què en penses sobre la IA?</h1>
@@ -36,6 +38,17 @@
       <option value="millorable">Només quan ho necessito urgent</option>
       <option value="dolenta">Mai</option>
     </select><br><br>
+
+    <label for="valor_chatgpt"> Valora la IA Chat GPT (del 1 al 10):</label><br>
+    <input type="number" id="valor_chatgpt" name="valor_chatgpt" min="1" max="10" required><br><br>
+
+    <label for="valor_gemini"> Valora la IA Gemini (del 1 al 10):</label><br>
+    <input type="number" id="valor_gemini" name="valor_gemini" min="1" max="10" required><br><br>
+
+    <label for="valor_perplexity"> Valora la IA Perplexity (del 1 al 10):</label><br>
+    <input type="number" id="valor_perplexity" name="valor_perplexity" min="1" max="10" required><br><br>
+
+    <h2>Preguntes sobre el nostre portal web</h2>
 
     <fieldset class="centrat">
       <legend>Quins aspectes t'han agradat més?</legend>

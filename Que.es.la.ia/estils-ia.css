@@ -1,0 +1,160 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #0066cc;
+    font-weight: 700;
+}
+
+h2 {
+    color: #0066cc;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #0066cc;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a.actiu {
+    background-color: #004999;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.apartats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.apartats-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apartats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.apartats-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.apartats-card h3 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.apartats-card p {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.enllas-apartats {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.enllas-apartats:hover {
+    background-color: #004999;
+}
+
+footer {
+    background-color: #444;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .apartats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .apartats-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
