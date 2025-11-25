@@ -4,31 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Currículum - Èric Robert Millan</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cv.css">
+        
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../Imatges/logo_web.png">
-    <style>
-        :root{ --primari:#0066cc; --fosc:#004999; --gris:#f5f7fa; }
-        html,body{ height:100%; margin:0; font-family:'Rubik',sans-serif; background:var(--gris); color:#222; }
-        .contenidor{ min-height:100vh; display:flex; align-items:center; justify-content:center; }
-        .fitxa{ width:100%; max-width:1000px; background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); padding:28px; }
-        header{ display:flex; align-items:center; gap:14px; margin-bottom:12px; }
-        .logo{ width:48px; height:48px; }
-        h1{ margin:0; color:var(--primari); font-size:1.4rem; }
-        .sobre-mi{ display:flex; gap:20px; align-items:flex-start; margin:18px 0; }
-        .foto { flex:0 0 160px; }
-        .foto img{ width:160px; height:160px; object-fit:cover; border-radius:8px; border:4px solid var(--primari); }
-        .bio{ flex:1; }
-        .bio h2{ margin-top:0; color:var(--primari); }
-        table{ width:100%; border-collapse:collapse; margin-top:18px; }
-        caption{ caption-side:top; text-align:left; font-weight:600; color:var(--primari); margin-bottom:8px; }
-        th, td{ border:1px solid #e6e9ee; padding:10px 12px; text-align:left; }
-        th{ background:linear-gradient(180deg, #f0f6ff, #eaf3ff); color:var(--fosc); }
-        tr:nth-child(even) td{ background:#fbfdff; }
-        .botons{ margin-top:18px; display:flex; gap:12px; }
-        .btn{ background:var(--primari); color:#fff; padding:9px 14px; border-radius:8px; text-decoration:none; display:inline-block; }
-        .btn.secondary{ background:#6c757d; }
-        @media (max-width:720px){ .sobre-mi{ flex-direction:column; align-items:center; } .foto{ flex:0 0 auto; } }
-    </style>
+    
+    <link rel="icon" type="image/png" href="../Imatges/logo.web/logo_web.png">
+
 </head>
 <body>
     <div class="contenidor">
@@ -40,14 +23,14 @@
 
             <section class="sobre-mi" id="sobre-mi">
                 <div class="foto">
-                    <img src="..\Imatges\eric_orla.jpg" alt="Èric Robert Millan">
+                    <img src="../Imatges/eric_orla.jpg" alt="Èric Robert Millan">
                 </div>
                 <div class="bio">
                     <h2>Sobre mi</h2>
                     <p>Sóc Èric Robert Millan, apassionat per l'anàlisi de dades i el desenvolupament de models de Machine Learning per a problemes reals.</p>
                     <p>Tinc experiència en preprocesat de dades, pipelines d'entrenament i desplegament de models a producció.</p>
                     <div class="botons">
-                        <a class="btn" href="..\Nosaltres\nosaltres.html">Tornar a Nosaltres</a>
+                        <a class="btn" href="../Nosaltres/nosaltres.html">Tornar a Nosaltres</a>
                         <a class="btn secondary" href="../Formulari/que_en_penses.html" target="_blank">Obrir Formulari</a>
                     </div>
                 </div>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Galeria: Intel·ligència Artificial</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estils-galeria.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <link rel="icon" type="image/png" href="../Imatges/logo.web/logo_web.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Galeria: Projectes i Imatges sobre IA</h1>
+            <p>Visualitzacions, conceptuals i exemples interns del projecte</p>
+        </div>
+
+        <nav aria-label="Navegació principal">
+            <ul>
+            <li><a href="../Inici/index.html">Inici</a></li>
+            <li><a href="../Que.es.la.ia/que-es-ia.html">Què és la IA?</a></li>
+            <li><a href="../Tipus.ia/tipus-ia.html">Tipus d'IA</a></li>
+            <li><a href="galeria.html" class="actiu">Galeria IA</a></li>
+            <li><a href="curriculum.html">Projecte</a></li>
+            <li><a href="../Nosaltres/nosaltres.html">Equip</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+            <li><a href="../Formulari/que_en_penses.html" target="_blank">Formulari</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Mostra visual: intel·ligència artificial</h2>
+            <p>
+                Aquesta galeria reuneix imatges internes del projecte relacionades amb conceptes, dades i visualitzacions de
+                models d'IA. Les imatges són propietat del projecte i s'han optimitzat per evitar deformacions.
+            </p>
+        </section>
+
+        <section class="gallery" aria-labelledby="gallery-title">
+            <h3 id="gallery-title">Imatges destacades</h3>
+
+            <div id="gallery-grid">
+                <article class="thumbnail" aria-labelledby="img1-title">
+                    <figure class="thumbnail">
+                        <img src="img/ai1.jpg" alt="Visualització de xarxa neuronal" />
+                        <figcaption>
+                            <strong id="img1-title">Xarxa neuronal — visualització</strong>
+                            <p>Mapa de connexions i activacions internes.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="thumbnail" aria-labelledby="img2-title">
+                    <figure class="thumbnail">
+                        <img src="img/ai2.jpg" alt="Dataset etiquetat" />
+                        <figcaption>
+                            <strong id="img2-title">Dataset i etiquetatge</strong>
+                            <p>Exemple de dades anotades per entrenament supervisat.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="thumbnail" aria-labelledby="img3-title">
+                    <figure class="thumbnail">
+                        <img src="img/ai3.jpg" alt="Resultats d'avaluació" />
+                        <figcaption>
+                            <strong id="img3-title">Resultats i gràfiques</strong>
+                            <p>Curves d'aprenentatge i matriu de confusió.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="thumbnail" aria-labelledby="img4-title">
+                    <figure class="thumbnail">
+                        <img src="img/ai-concept.png" alt="Conceptes d'IA" />
+                        <figcaption>
+                            <strong id="img4-title">Conceptes clau</strong>
+                            <p>Representació conceptual de les capes i el flux de dades.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section class="detalls" aria-labelledby="detalls-title">
+            <h4 id="detalls-title">Metadades i dades tècniques</h4>
+
+            <article class="meta">
+                <table>
+                    <caption>Taula de metadades de les imatges</caption>
+                    <thead>
+                        <tr>
+                            <th>Fitxer</th>
+                            <th>Resolució</th>
+                            <th>Format</th>
+                            <th>Descripció</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>img/ai1.jpg</td>
+                            <td>1600×900</td>
+                            <td>JPEG</td>
+                            <td>Visualització de la xarxa neuronal</td>
+                        </tr>
+                        <tr>
+                            <td>img/ai2.jpg</td>
+                            <td>1280×720</td>
+                            <td>JPEG</td>
+                            <td>Dataset etiquetat</td>
+                        </tr>
+                        <tr>
+                            <td>img/ai3.jpg</td>
+                            <td>1920×1080</td>
+                            <td>PNG</td>
+                            <td>Gràfiques d'avaluació</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <aside class="controls" aria-labelledby="controls-title">
+            <h5 id="controls-title">Filtres i enviament</h5>
+
+            <form action="upload-handler.html" method="post" enctype="multipart/form-data" class="upload-form">
+                <label for="search">Cerca per etiqueta:</label>
+                <input id="search" name="search" type="search" placeholder="ex. xarxa, dades" />
+
+                <label for="file">Pujar imatge (interna al projecte):</label>
+                <input id="file" name="file" type="file" accept="image/*" />
+
+                <fieldset>
+                    <legend>Nivell d'ús</legend>
+                    <label><input type="radio" name="usage" value="demo" checked /> Demo</label>
+                    <label><input type="radio" name="usage" value="produccio" /> Producció</label>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <nav aria-label="Recursos externs">
+                <h6>Enllaços d'interès</h6>
+                <ul>
+                    <li><a href="https://ai.google/" target="_blank" rel="noopener">Google AI</a></li>
+                    <li><a href="https://openai.com/" target="_blank" rel="noopener">OpenAI</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="descripcio" aria-labelledby="desc-title">
+            <h6 id="desc-title">Notes</h6>
+            <p>
+                Les imatges estan emmagatzemades localment a la carpeta "img/". S'han aplicat estils perquè no es deformin (object-fit)
+                i es proporciona una experiència responsive amb grid. No s'utilitza l'etiqueta &lt;br&gt; per a salts de línia.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Projecte IA — Recursos i imatges internes</p>
+            <p><a href="../legal.html">Avís legal</a> · <a href="../privacitat.html">Privacitat</a></p>
+        </div>
+    </footer>
+</body>
+</html>

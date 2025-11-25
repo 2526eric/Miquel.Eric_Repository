@@ -1,0 +1,139 @@
+:root {
+    --primari: #0066cc;
+    --fosc: #004999;
+    --gris: #f5f7fa;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background: var(--gris);
+    color: #222;
+}
+
+.contenidor {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fitxa {
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--primari);
+    font-size: 1.4rem;
+}
+
+.sobre-mi {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 18px 0;
+}
+
+.foto {
+    flex: 0 0 160px;
+}
+
+.foto img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid var(--primari);
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio h2 {
+    margin-top: 0;
+    color: var(--primari);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 600;
+    color: var(--primari);
+    margin-bottom: 8px;
+}
+
+th,
+td {
+    border: 1px solid #e6e9ee;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(180deg, #f0f6ff, #eaf3ff);
+    color: var(--fosc);
+}
+
+tr:nth-child(even) td {
+    background: #fbfdff;
+}
+
+.botons {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    background: var(--primari);
+    color: #fff;
+    padding: 9px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--fosc);
+}
+
+.btn.secondary {
+    background: #6c757d;
+}
+
+.btn.secondary:hover {
+    background: #5a6268;
+}
+
+@media (max-width: 720px) {
+    .sobre-mi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        flex: 0 0 auto;
+    }
+}
+

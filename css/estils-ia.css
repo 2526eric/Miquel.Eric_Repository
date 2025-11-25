@@ -50,18 +50,6 @@ nav ul li a.actiu {
     background-color: #004999;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-header a {
-    text-decoration: none;
-}
-
 .logo {
     width: 60px;
     height: 60px;
@@ -133,15 +121,6 @@ header a {
     background-color: #004999;
 }
 
-footer {
-    background-color: #444;
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 40px;
-}
-
 @media (max-width: 768px) {
     .apartats-container {
         flex-direction: column;
@@ -158,3 +137,5 @@ footer {
         max-width: 400px;
     }
 }
+
+

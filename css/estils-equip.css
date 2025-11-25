@@ -32,7 +32,6 @@ nav ul {
     background-color: #0066cc;
     margin-bottom: 40px;
     border-radius: 8px;
-    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -50,16 +49,79 @@ nav ul li a.actiu {
     background-color: #004999;
 }
 
-header {
+.llista-membres {
+    list-style: none;
+    padding: 0;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 60px;
+    margin-top: 600px;
+    margin: 30px auto;
 }
 
-header a {
+.membre-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.membre-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0066cc;
+    margin-bottom: 15px;
+}
+
+.membre-card h3 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.membre-card p {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.enllac-cv {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
     text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.enllac-cv:hover {
+    background-color: #004999;
+}
+
+
+@media (max-width: 768px) {
+    .llista-membres {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .logo {
@@ -71,56 +133,4 @@ header a {
 
 .logo:hover {
     transform: scale(1.1);
-}
-
-.seccio-inici {
-    margin: 40px auto;
-    max-width: 900px;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 40px 30px;
-}
-
-.seccio-inici img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    margin: 20px 0;
-}
-
-.boto-inici {
-    display: inline-block;
-    background-color: #0066cc;
-    color: white;
-    text-decoration: none;
-    padding: 12px 28px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 1.1em;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.boto-inici:hover {
-    background-color: #004999;
-}
-
-footer {
-    background-color: #444;
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 40px;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .seccio-inici {
-        padding: 20px 5px;
-    }
 }
