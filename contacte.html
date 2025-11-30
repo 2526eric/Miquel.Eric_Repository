@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contacte — Projecte IA</title>
+
+    <!-- Estils genèrics i específics de la pàgina -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/estils-contacte.css">
+
+    <link rel="icon" type="image/png" href="img/logo.web/logo_web.png">
+</head>
+<body>
+    <header>
+        <div class="container header-row">
+            <a href="index.html" aria-label="Inici"><img src="img/logo.web/logo_web.png" alt="Logo" class="logo"></a>
+            <h1 id="site-title">Contacta amb nosaltres</h1>
+        </div>
+    </header>
+
+    <nav aria-label="Navegació principal">
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="que-es-ia.html">Què és la IA?</a></li>
+            <li><a href="tipus-ia.html">Tipus d'IA</a></li>
+            <li><a href="galeria.html">Galeria IA</a></li>
+            <li><a href="curriculum.html">Projecte</a></li>
+            <li><a href="nosaltres.html">Equip</a></li>
+            <li><a href="contacte.html" class="actiu">Contacte</a></li>
+            <li><a href="que_en_penses.html" target="_blank">Formulari</a></li>
+        </ul>
+    </nav>
+
+    <main class="container" role="main">
+        <section class="intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Parla amb l'equip</h2>
+            <p class="lead">Tens una consulta, una proposta o vols col·laborar? Omple el formulari i et respondrem aviat.</p>
+        </section>
+
+        <section class="contact-layout">
+            <article class="form-card" aria-labelledby="form-title">
+                <h3 id="form-title">Formulari de contacte</h3>
+
+                <form action="#" method="post" class="contact-form" novalidate>
+                    <label for="nom">Nom i cognoms</label>
+                    <input id="nom" name="nom" type="text" required placeholder="Ex. Maria Pérez">
+
+                    <label for="email">Correu electrònic</label>
+                    <input id="email" name="email" type="email" required placeholder="exemple@domini.cat">
+
+                    <label for="assumpte">Assumpte</label>
+                    <select id="assumpte" name="assumpte">
+                        <option value="consulta">Consulta general</option>
+                        <option value="colaboracio">Col·laboració</option>
+                        <option value="errors">Informar d'un error</option>
+                        <option value="altres">Altres</option>
+                    </select>
+
+                    <label for="missatge">Missatge</label>
+                    <textarea id="missatge" name="missatge" rows="6" placeholder="Escriu el teu missatge aquí..." required></textarea>
+
+                    <fieldset class="pref-contacte">
+                        <legend>Preferència de resposta</legend>
+                        <label><input type="radio" name="contacte_pref" value="email" checked> Correu</label>
+                        <label><input type="radio" name="contacte_pref" value="telefon"> Telèfon</label>
+                    </fieldset>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name=" subscriure" value="si"> Vull rebre novetats i recursos per correu
+                    </label>
+
+                    <div class="botons">
+                        <button type="submit" class="btn">Enviar missatge</button>
+                        <button type="reset" class="btn secondary">Netejar</button>
+                    </div>
+                </form>
+            </article>
+
+            <aside class="info-card" aria-labelledby="info-title">
+                <h4 id="info-title">Informació de contacte</h4>
+
+                <figure class="contact-figure">
+                    <figcaption>Visita'ns o escriu-nos, respondrem com més aviat millor.</figcaption>
+                </figure>
+
+                <table class="contact-table" summary="Dades de contacte">
+                    <caption>Dades</caption>
+                    <tbody>
+                        <tr><th>Adreça</th><td>C/ Perú, 12 - Barcelona</td></tr>
+                        <tr><th>Telèfon</th><td>+34 600 123 456</td></tr>
+                        <tr><th>Correu</th><td><a href="mailto:miqueleric@transversal.cat">miqueleric@transversal.cat</a></td></tr>
+                        <tr><th>Horari</th><td>Dl - Dj: 9:00 - 18:00 <br> 
+                                            Dv: 9:00 - 15:00
+                        </td></tr>
+                    </tbody>
+                </table>
+
+                <nav aria-label="Enllaços útils" class="mini-links">
+                    <h5>Enllaços</h5>
+                    <ul>
+                        <li><a href="nosaltres.html">L'equip</a></li>
+                        <li><a href="galeria.html">Galeria IA</a></li>
+                        <li><a href="que_en_penses.html" target="_blank" rel="noopener">Formulari públic</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Projecte IA — Equip d'Intel·ligència Artificial</p>
+        </div>
+    </footer>
+</body>
+</html>

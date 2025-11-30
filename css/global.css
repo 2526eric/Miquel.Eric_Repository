@@ -1,3 +1,14 @@
+/* Estil de la lletra */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+	--primari: #0066cc; /* Color principal (blau) */
+	--fosc: #004999; /* Color fosc (blau fosc) */
+	--fons: #f8f9fa; /* Color de fons del body */
+	--text: #333; /* Color principal del text */
+	--peu: #444; /* Color de fons del footer */
+}
+
 header {
 	display: flex;
 	align-items: center;
@@ -14,7 +25,10 @@ footer {
     text-align: center;
     padding: 20px;
     background: var(--primari);
-    color: #fff;
+    color: var(--fons);
     margin-top: 40px;
+    margin: auto;
     border-radius: 8px;
+    background-color: var(--peu);
 }
+

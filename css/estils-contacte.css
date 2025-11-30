@@ -1,0 +1,95 @@
+/* Estils específics per a contacte - segueix paleta i estructura dels altres fitxers */
+
+/* ===== VARIABLES i base (recomanable reutilitzar les mateixes variables globals) */
+:root{
+    --primari: #0066cc;
+    --fosc: #004999;
+    --fons: #f8f9fa;
+    --text: #333;
+    --card-bg: #fff;
+    --radius: 12px;
+}
+
+h1 {
+    color: #0066cc;
+    font-weight: 700;
+}
+
+/* ===== Estructura general (seguint estils globals) */
+body { font-family: 'Rubik', sans-serif; background: var(--fons); color: var(--text); margin: 0; }
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+/* ===== Header i nav (ús d'etiqueta + classe i id) */
+.header-row { display:flex; align-items:center; gap:16px; padding: 1rem 0; }
+.logo { width:60px; height:60px; }
+#site-title { margin:0; color:var(--primari); font-size:1.4rem; }
+
+/* Nav: reutilitza aspecte dels altres fitxers (selector d'etiqueta i descendant) */
+nav ul { list-style:none; padding:0; display:flex; justify-content:center; gap:15px; background: linear-gradient(90deg,var(--primari),var(--fosc)); margin: 0.6rem 0 1.4rem; border-radius:8px; flex-wrap:wrap; }
+nav ul li a { color:#fff; text-decoration:none; padding:10px 15px; border-radius:6px; display:block; font-weight:500; }
+nav ul li a.actiu, nav ul li a:hover { background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+
+/* ===== Layout de contacte (combinació de selectors) */
+.contact-layout { display:grid; grid-template-columns: 1fr 360px; gap: 28px; align-items:start; padding-bottom: 2rem; }
+
+/* Form card */
+.form-card { background: var(--card-bg); padding: 20px; border-radius: var(--radius); box-shadow: 0 4px 14px rgba(0,0,0,0.06); }
+.form-card h3 { margin-top:0; color:var(--primari); }
+
+/* Formulari: selectors d'etiqueta, id, classe */
+.contact-form label { display:block; margin:10px 0 6px; font-weight:600; color:#222; }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width:100%;
+    padding:10px 12px;
+    border:1px solid #e6e9ee;
+    border-radius:8px;
+    font-size:0.95rem;
+    background:#ffffff;
+    box-sizing:border-box;
+}
+.contact-form textarea { resize:vertical; min-height:120px; }
+
+/* Fieldset i preferències (combinació de selectors) */
+.pref-contacte { margin:12px 0; border: none; padding:0; }
+.pref-contacte legend { font-weight:600; margin-bottom:8px; }
+
+/* Checkbox estil senzill */
+.checkbox { display:flex; align-items:center; gap:10px; margin:10px 0; color:#444; }
+
+/* Botons (reutilitzant classes similars) */
+.botons { display:flex; gap:12px; margin-top:14px; }
+.btn { background: var(--primari); color:#fff; padding:10px 16px; border-radius:8px; border:none; cursor:pointer; text-decoration:none; font-weight:600; }
+.btn.secondary { background:#6c757d; }
+.btn:hover { background: var(--fosc); }
+.btn.secondary:hover { background:#5a6268; }
+
+/* Aside info */
+.info-card { background: var(--card-bg); padding:18px; border-radius: var(--radius); box-shadow: 0 4px 14px rgba(0,0,0,0.04); }
+.info-card h4 { margin-top:0; color:var(--primari); }
+
+/* Figura i imatge */
+.contact-figure img { width:100%; border-radius:8px; display:block; object-fit:cover; margin-bottom:8px; }
+
+/* Taula de contacte */
+.contact-table { width:100%; border-collapse:collapse; margin-top:8px; }
+.contact-table caption { text-align:left; font-weight:600; color:var(--primari); margin-bottom:6px; }
+.contact-table th, .contact-table td { padding:8px 10px; border:1px solid #eef2f6; text-align:left; }
+.contact-table th { background: linear-gradient(180deg,#f0f6ff,#eaf3ff); color:var(--fosc); }
+
+/* Mini enllaços */
+.mini-links ul { list-style:none; padding:0; margin:8px 0 0; display:flex; flex-direction:column; gap:6px; }
+.mini-links a { color: white; text-decoration:none; }
+.mini-links a:hover { color: var(--fosc); text-decoration:underline; }
+.mini-links caption { text-align:left; font-weight:600; color:var(--primari); margin-bottom:6px; }
+
+/* ===== Responsive: apilar a pantalles petites ===== */
+@media (max-width: 920px) {
+    .contact-layout { grid-template-columns: 1fr; }
+    nav ul { gap:10px; padding:10px; }
+}
+
+/* ===== Ajust per empènyer el footer cap avall si cal ===== */
+main, .container[role="main"] { padding-bottom: 40px; }
