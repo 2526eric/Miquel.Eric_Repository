@@ -32,6 +32,7 @@ nav ul {
     background-color: #0066cc;
     margin-bottom: 40px;
     border-radius: 8px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {

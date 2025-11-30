@@ -12,25 +12,21 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <a href ="index.html"><img src="img/logo.web/logo_web.png" alt="Logo" class="logo"></a>
-            <h1>Galeria: Projectes i Imatges sobre IA</h1>
-            <p>Visualitzacions, conceptuals i exemples interns del projecte</p>
-        </div>
-
-        <nav aria-label="Navegació principal">
-            <ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="que-es-ia.html">Què és la IA?</a></li>
-            <li><a href="tipus-ia.html">Tipus d'IA</a></li>
-            <li><a href="galeria.html" class="actiu">Galeria IA</a></li>
-            <li><a href="curriculum.html">Projecte</a></li>
-            <li><a href="nosaltres.html">Equip</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
-            <li><a href="que_en_penses.html" target="_blank">Formulari</a></li>
-            </ul>
-        </nav>
+        <a href ="index.html"><img src="img/logo.web/logo_web.png" alt="Logo" class="logo"></a>
+        <h1>Galeria: Projectes i Imatges sobre IA</h1>
     </header>
+
+    <nav aria-label="Navegació principal">
+        <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="que-es-ia.html">Què és la IA?</a></li>
+        <li><a href="tipus-ia.html">Tipus d'IA</a></li>
+        <li><a href="galeria.html" class="actiu">Galeria IA</a></li>
+        <li><a href="nosaltres.html">Equip</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+        <li><a href="que_en_penses.html" target="_blank">Formulari</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="intro" aria-labelledby="intro-title">
@@ -47,7 +43,7 @@
             <div id="gallery-grid">
                 <article class="thumbnail" aria-labelledby="img1-title">
                     <figure class="thumbnail">
-                        <img src="img/ai1.jpg" alt="Visualització de xarxa neuronal" />
+                        <img src="img/galeria.ia/XarxaNeuronal.png" alt="Visualització de xarxa neuronal" />
                         <figcaption>
                             <strong id="img1-title">Xarxa neuronal — visualització</strong>
                             <p>Mapa de connexions i activacions internes.</p>
@@ -57,7 +53,7 @@
 
                 <article class="thumbnail" aria-labelledby="img2-title">
                     <figure class="thumbnail">
-                        <img src="img/ai2.jpg" alt="Dataset etiquetat" />
+                        <img src="img/galeria.ia/dataset.png" alt="Dataset etiquetat" />
                         <figcaption>
                             <strong id="img2-title">Dataset i etiquetatge</strong>
                             <p>Exemple de dades anotades per entrenament supervisat.</p>
@@ -67,7 +63,7 @@
 
                 <article class="thumbnail" aria-labelledby="img3-title">
                     <figure class="thumbnail">
-                        <img src="img/ai3.jpg" alt="Resultats d'avaluació" />
+                        <img src="img/galeria.ia/grafico.jpg" alt="Resultats d'avaluació" />
                         <figcaption>
                             <strong id="img3-title">Resultats i gràfiques</strong>
                             <p>Curves d'aprenentatge i matriu de confusió.</p>
@@ -77,7 +73,7 @@
 
                 <article class="thumbnail" aria-labelledby="img4-title">
                     <figure class="thumbnail">
-                        <img src="img/ai-concept.png" alt="Conceptes d'IA" />
+                        <img src="img/galeria.ia/bombilla.jpg!w700wp" alt="Conceptes d'IA" />
                         <figcaption>
                             <strong id="img4-title">Conceptes clau</strong>
                             <p>Representació conceptual de les capes i el flux de dades.</p>
@@ -103,19 +99,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>img/ai1.jpg</td>
+                            <td>img/galeria.ia/XarxaNeuronal.png</td>
                             <td>1600×900</td>
                             <td>JPEG</td>
                             <td>Visualització de la xarxa neuronal</td>
                         </tr>
                         <tr>
-                            <td>img/ai2.jpg</td>
+                            <td>img/galeria.ia/dataset.png</td>
                             <td>1280×720</td>
                             <td>JPEG</td>
                             <td>Dataset etiquetat</td>
                         </tr>
                         <tr>
-                            <td>img/ai3.jpg</td>
+                            <td>img/galeria.ia/grafico.jpg</td>
                             <td>1920×1080</td>
                             <td>PNG</td>
                             <td>Gràfiques d'avaluació</td>
@@ -143,29 +139,32 @@
 
                 <button type="submit">Enviar</button>
             </form>
-
-            <nav aria-label="Recursos externs">
-                <h6>Enllaços d'interès</h6>
-                <ul>
-                    <li><a href="https://ai.google/" target="_blank" rel="noopener">Google AI</a></li>
-                    <li><a href="https://openai.com/" target="_blank" rel="noopener">OpenAI</a></li>
-                </ul>
-            </nav>
         </aside>
 
-        <section class="descripcio" aria-labelledby="desc-title">
-            <h6 id="desc-title">Notes</h6>
-            <p>
-                Les imatges estan emmagatzemades localment a la carpeta "img/". S'han aplicat estils perquè no es deformin (object-fit)
-                i es proporciona una experiència responsive amb grid. No s'utilitza l'etiqueta &lt;br&gt; per a salts de línia.
-            </p>
+        <section class="recursos-enlaces" aria-labelledby="enlaces-title">
+            <h5 id="enlaces-title">Enllaços d'interès</h5>
+            <div class="enlaces-grid">
+                <a href="https://ai.google/" target="_blank" rel="noopener" class="enlace-card">
+                    <div class="enlace-icon">🔍</div>
+                    <h6>Google AI</h6>
+                    <p>Recursos i recerca en IA</p>
+                </a>
+                <a href="https://openai.com/" target="_blank" rel="noopener" class="enlace-card">
+                    <div class="enlace-icon">💡</div>
+                    <h6>OpenAI</h6>
+                    <p>Models i documentació</p>
+                </a>
+                <a href="https://www.anthropic.com/" target="_blank" rel="noopener" class="enlace-card">
+                    <div class="enlace-icon">🛡️</div>
+                    <h6>Anthropic</h6>
+                    <p>Claude i seguretat en IA</p>
+                </a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Projecte IA — Desenvolupat per l'Equip d'IAs</p>
-        </div>
+        <p>&copy; 2025 Projecte IA — Desenvolupat per l'Equip d'IA</p>
     </footer>
 </body>
 </html>
